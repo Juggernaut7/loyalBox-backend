@@ -6,6 +6,9 @@ const express = require('express');
 
 // Custom modules
 const connectDB = require('./config/db');
+app.use("/", (req, res)=> {
+  res.send("Welcome to the Rewards API");
+})
 
 // Route files
 const authRoutes = require('./routes/authRoutes');
