@@ -33,7 +33,7 @@ app.use('/api/admin', adminRoutes);
 
 // Optional: 404 handler for unknown routes
 app.use((req, res) => {
-  res.status(200).json({ message: 'welcome to loyalbox' });
+  res.status(200).json('Viola, welcome to loyalbox');
 });
 
 // Start server
