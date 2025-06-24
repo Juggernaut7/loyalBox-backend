@@ -6,9 +6,9 @@ const express = require('express');
 
 // Custom modules
 const connectDB = require('./config/db');
-app.use("/", (req, res)=> {
-  res.send("Welcome to the Rewards API");
-})
+// app.use("/", (req, res)=> {
+//   res.send("Welcome to the Rewards API");
+// })
 
 // Route files
 const authRoutes = require('./routes/authRoutes');
@@ -33,7 +33,7 @@ app.use('/api/admin', adminRoutes);
 
 // Optional: 404 handler for unknown routes
 app.use((req, res) => {
-  res.status(404).json({ message: 'Route not found' });
+  res.status(200).json({ message: 'welcome to loyalbox' });
 });
 
 // Start server
